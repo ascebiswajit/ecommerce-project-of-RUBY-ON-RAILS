@@ -1,0 +1,23 @@
+<%# <div class="card-group"> %>
+
+<div id="<%= dom_id cart %>" >
+
+
+    
+      <div class="card-body">
+       <% if cart.avatar.attached? %>
+  <%= image_tag cart.avatar, style: "width:300px; "%>
+  <%end%>
+      <h5 class="card-title"><%= cart.title %></h5>
+        <p class="card-text"><%= cart.description %></p> 
+         <p class="card-text"><%= cart.price %></p> 
+      </div>
+      
+
+  </div>
+  </div>
+
+
+    
+
+

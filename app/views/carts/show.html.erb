@@ -1,0 +1,15 @@
+  <p style="color: green"><%= notice %></p>
+
+<div class="jumbotron">
+  <%= button_to "Delete", @cart, method: :delete ,class:"btn btn-danger float-right"%>
+<%= render @cart %>
+   <%= link_to "Edit ", edit_cart_path(@cart) ,class:"btn btn-primary" %> |
+  <%= link_to "Back to product", carts_path ,class:"btn btn-dark" %>|
+  <%# <%= link_to "Add to cart", home_index_path ,class:"btn btn-dark" %> 
+    <%# <% if @product.include?(@cart) %> 
+            <%# <%= button_to "Remove from cart", remove_from_cart_path(@cart), method: :delete %> 
+          <%# <% else %> 
+            <%= button_to "Add to cart", add_to_cart_path(@cart) ,class:"btn btn-dark" %>
+          <%# <% end %> 
+
+</div>

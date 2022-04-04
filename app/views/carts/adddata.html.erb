@@ -1,0 +1,16 @@
+
+  
+     
+      <% @product.each do |cart| %>
+      <div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-transparent border-success">product Id: <%= cart.id %></div>
+  <div class="card-body text-success">
+    <h5 class="card-title"><%= cart.title %></h5>
+    <p class="card-text"><%= cart.description%></p>
+  </div>
+  <div class="card-footer bg-transparent border-success"><%= cart.price%></div>
+</div>
+ <%= button_to "Remove from cart", remove_from_cart_path(@product), method: :delete ,class:"btn btn-danger" %> 
+ <% end %>
+      
+      <hr>

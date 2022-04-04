@@ -1,0 +1,31 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>ecommerce</h1>
+
+<%# <div class="row row-cols-1 row-cols-md-3"> %>
+<br>
+<div class="float-right">
+<%= link_to "New cart", new_cart_path ,class:"btn btn-outline-success" %>
+</div>
+<br>
+<br>
+
+<div id="carts"   class="card-group">
+  <% @carts.each do |cart| %>
+<div class="col-sm-4">
+<div class="card">
+  
+     
+        <%= render cart %>
+   
+
+   <%= link_to "view details", cart ,class:"btn btn-outline-info"%>
+    
+    
+    </div>
+  <% end %>
+ 
+</div>
+
+   <%# </div> %>
+
